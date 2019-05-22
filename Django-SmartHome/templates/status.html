@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+{% if sensorVal %}
+
+<p>##### Sensor Status #####</p>
+
+    <p> Motion Sensor: {{sensorVal.field5}} </p>
+    <p> Light Sensor: {{sensorVal.field6}}</p>
+    <p> Heat Sensor: {{sensorVal.field7 }} </p>
+
+{% endif %}
+
+{% endblock %}

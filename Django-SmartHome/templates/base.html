@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="A Smart Home Project">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <link href="{% static 'SmartHome/normalize.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'SmartHome/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'SmartHome/mobile.css' %}" rel="stylesheet" type="text/css" media="screen and (max-width: 768px) and (min-width: 0px)">
+    <title>A Smart Home Project with ThingSpeak</title>
+</head>
+
+  <body>
+
+    <div class="all-page">
+
+      <h1 class="main-title">A Smart Home System</h1>
+
+      <div style="width: 90%;"> </div>
+
+      <div class="choose-lang"> </div>
+
+      <p>A Smart Home Project with ThingSpeak</p>
+
+      <p class="margin1 link-box">
+
+        <a href="/control/" class="blue-link">
+          Control Device
+        </a>
+
+          |
+
+        <a href="/display/" class="blue-link">
+          Display Sensor Value
+        </a>
+
+      </p>
+
+      {% block content %}{% endblock %}
+
+      <div style="min-height: 300px; margin:2em">
+        <div style="margin-right: 2em; float:left">
+        </div>
+        <div style="float:left">
+        </div>
+        <div style="clear:both"></div>
+      </div>
+
+    </div>
+
+     <div class="bottom-hint">
+        <div>The Chinese University of Hong Kong</div>
+      </div>
+
+  </body>
+
+</html>
+
